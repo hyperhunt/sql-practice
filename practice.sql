@@ -85,6 +85,26 @@ CREATE TABLE suppliers (
 -- SELECT DISTINCT name from products, suppliers WHERE products.sup_id = suppliers.sup_id AND suppliers.city = 'Moscow';
 -- WHERE table1.userID1 = t2.id AND table1.userID2 = t3.id;
 
+-- INSERT INTO products (product_id, price, name, category, sup_id) VALUES (5, 543.88, "Salt", "Food", 1);
+-- INSERT INTO products (product_id, price, name, category, sup_id) VALUES (6, 143.88, "Salt", "Food", 2);
+-- INSERT INTO suppliers (sup_id, city, opendate) VALUES (2, "Russia", '23-09-1965 00:00');
+-- SELECT min(price) FROM products, suppliers WHERE products.sup_id = suppliers.sup_id AND suppliers.opendate = '23-09-1965 00:00';
+-- select * from t_name a where d = (select max(d) from t_name b where a.c = b.c) order by a.c
+
+-- SELECT price FROM products, suppliers WHERE name = 'Salt' order by opendate desc limit 1;
+
+-- SELECT * FROM products;
+-- SELECT * FROM suppliers;
+
+-- UPDATE products SET sup_id = 4 WHERE name = "Forester";
+-- UPDATE PRODUCTS SET price = price * 3 WHERE category = 3;
+-- FROM_UNIXTIME(time) AS formatted_date
+-- SELECT t1.*, t2.* FROM t1 JOIN t2 ON t1.i1 = t2.i2
+-- LEFT JOIN table2 as user1 on user1.ID = table1.userID1demo
+
+-- SELECT DISTINCT name from products, suppliers WHERE products.sup_id = suppliers.sup_id AND suppliers.city = 'Moscow';
+-- WHERE table1.userID1 = t2.id AND table1.userID2 = t3.id;
+
 
 
 
